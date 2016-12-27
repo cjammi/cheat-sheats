@@ -1,5 +1,9 @@
+# Screen
+
+```
 screen -S <name>
 Ctrl+A, then D
 screen -r <name>
 screen -ls
-type exit to kill a screen
+exit #to kill a screen
+```

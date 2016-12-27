@@ -1,59 +1,90 @@
-See files changed in a commit:
+# Git
+
+## See files changed in a commit
+```
 git show --pretty="" --name-only <sha_of_C8>
 git diff-tree --no-commit-id --name-only -r (sha_of_C8)
-
 git diff <sha_of_C8>^ <sha_of_C8> [filename]
+```
 
-git checkout <sha_of_C8>
 
-Discard all un-staged changes:
+## Discard all un-staged changes
+```
 git checkout -- .
+```
 
-See merges by an author
+## See merges by an author
+```
 git log --merges --author james.bond@OO7.com
+```
 
-Cleanup:
+## delete local branch
+```
 git branch -d <local_branch_name>
+```
 
-BRANCH:
+## Branch:
+```
+git checkout <sha_of_C8>
 git checkout -b <branch_name>
 git branch -r
+```
 
-PULL/FETCH:
+## Pull/Fetch:
+```
 git pull --rebase <remote name> <branch name>
 git fetch --prune
 git pull
+```
 
-COMMIT:
+## Commit:
+```
 git commit -a
 git commit --dry-run
+```
 
-ADD:
+## ADD:
+```
 git add .
+```
 
-RESET:
+## RESET:
+```
 git reset --hard <sha_of_C8>
+```
 
-REVERT:
+## REVERT:
+```
 git revert --no-edit -m 1 (sha_of_C8)
+```
 
 
-PUSH:
+## PUSH:
+```
 git push origin <local_branch_name>
 git push -u origin <remote_branch_name>
 git push origin <local_branch_name>:<remote_branch_name>
+```
 
-MERGE:
+## MERGE:
+```
 git merge <branch_to_be_merged_name> --no-edit
+```
 
-CHERRY-PICK:
+## CHERRY-PICK:
+```
 git cherry-pick (sha_of_C8)
+```
 
-LOG:
+## LOG:
+```
 git log --pretty=format:"%h %s" --graph
 git log --graph  --decorate  --first-parent <local_branch_name>
 git log <master_branch_name>..<slave_branch_name>   --oneline
+```
 
-DIFF:
+## DIFF:
+```
 git remote show origin
 git diff --name-only HEAD~1 HEAD
+```
