@@ -88,3 +88,12 @@ git log <master_branch_name>..<slave_branch_name>   --oneline
 git remote show origin
 git diff --name-only HEAD~1 HEAD
 ```
+
+## Navigate in the results of DIFF
+```
+Next line:  return
+Next page:  space bar
+Previous page:  w
+Quit viewing the diff:  q
+Help:  h
+```
