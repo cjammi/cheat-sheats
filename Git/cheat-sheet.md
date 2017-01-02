@@ -97,3 +97,19 @@ Previous page:  w
 Quit viewing the diff:  q
 Help:  h
 ```
+
+## Add upstream for a repository for your fork
+```
+git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+```
+
+## List the remote repository for your fork
+```
+git remote -v
+```
+
+## Syncing a fork
+```
+git fetch upstream # commits will be stored in a local branch 'upstream/master'
+git merge upstream/master # To changes into your branch
+```
